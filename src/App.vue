@@ -1,32 +1,27 @@
+<!--  -->
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div class="">
+    <router-link to="/test1" tag="button">测试1</router-link>
+    <router-link to="/test2" tag="button">测试2</router-link>
+    <router-view></router-view>
   </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+<script>
+export default {
+  name: "PersonStatistics",
+  components: {},
+  data() {
+    return {};
+  },
+  created() {},
+  methods: {
+    //设置颜色选择框中颜色
+    aaa() {
+      this.$router.push("/vvv");
+    },
+  },
+};
+</script>
+<style scoped>
 </style>
